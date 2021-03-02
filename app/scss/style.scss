@@ -123,21 +123,20 @@
 
 // --- Services ---
 .services {
-  padding: 100px 0;  
+  padding: 100px 0;
+  background-color: #fafafa;  
   &__title {
   }
   &__items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
   &__item {
-    max-width: 370px;
-    margin-bottom: 40px;
     background-color: #333;
   }
   &__item-content {
-    padding: 12px 33px 29px;
+    padding: 20px 33px 29px;
   }
   &__item-img {
   }
@@ -158,10 +157,101 @@
   }
 }
 
-
 // --- About ---
+.about {
+  padding: 15px 0 90px;
+  background-color: #fafafa;  
+  &__title {
+  }
+  &__content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item-img {
+    height: 66px;
+    margin-bottom: 20px;
+  }
+  &__item-title {
+    max-width: 180px;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -30px;
+      height: 20px;
+      width: 2px;
+      background-color: #000;
+    }
+  }
+  &__item-text {
+    text-align: center;
+  }
+}
 
 // --- Checking ---
+.checking {
+  padding: 100px 0;
+  &__title {
+  }
+  &__subtitle {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 65px;
+    font-size: 23px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    width: 33.333%;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  &__item-img {
+    width: 75px;
+    height: 75px;
+    padding: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .2);
+    & img {
+      min-height: 43px;
+      min-width: 43px;
+    }
+  }
+  &__item-content {
+  }
+  &__item-title {
+    text-align: left;
+  }
+  &__item-text {
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 17px;
+
+  }
+  &__image {
+    & img {
+      max-height: 550px;
+    }
+  }
+}
+
 
 // --- How ---
 
