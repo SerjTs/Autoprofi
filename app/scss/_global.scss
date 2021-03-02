@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "FuturaLightC", sans-serif;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: normal;
+  color: $dark;
+}
+
+h1 {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 44px;
+  line-height: 53px;
+  color: $light;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "FuturaLightC", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 700;
+  color: $dark;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "FuturaDemiC", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  color: $dark;
+  text-align: center;
+} 
+
+a {
+  color: $light;
+}
+
+.link-btn,
+.popup-btn {
+  display: inline-block;
+  padding: 18px 50px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+  color: $light;
+	font-family: 'FuturaDemiC', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: .4s;
+  cursor: pointer;
+    &:hover {
+      background-color: #333;
+    }
+}
+
+// @keyframes slideme {
+//     0% { left: -30px; margin-left: 0px; }
+//     30% { left: 110%; margin-left: 80px; }
+//     100% { left: 110%; margin-left: 80px; } 
+// }
+
+// .anim {
+//   opacity: 0;
+// }
+// .fadeInUp {
+//   animation: fadeInUp 1s;
+//   animation-fill-mode: forwards;
+//   animation-delay: 0.3s;
+// }
+// @keyframes fadeInUp {
+//   0% {
+//       opacity: 0;
+//       transform: translate3d(0, 100%, 0);
+//   }
+//   100% {
+//       opacity: 1;
+//       transform: translate3d(0, 0, 0);
+//   }
+// }
+
+// @keyframes fadeInLeft {
+//   0% {
+//       opacity: 0;
+//       transform: translate3d(-100%, 0, 0);
+//   }
+//   100% {
+//       opacity: 1;
+//       transform: translate3d(0, 0, 0);
+//   }
+// }
+
+// @keyframes fadeInRight {
+//   0% {
+//       opacity: 0;
+//       transform: translate3d(100%, 0, 0);
+//   }
+//   100% {
+//       opacity: 1;
+//       transform: translate3d(0, 0, 0);
+//   }
+// }
+
+// @keyframes fadeInDown {
+//   0% {
+//       opacity: 0;
+//       transform: translate3d(0, 100%, 0);
+//   }
+//   100% {
+//       opacity: 1;
+//       transform: translate3d(0, 0, 0);
+//   }
+// }
