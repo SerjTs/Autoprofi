@@ -252,8 +252,137 @@
   }
 }
 
-
 // --- How ---
+.how {
+  padding: 100px 0;
+  background-color: #fafafa;  
+  position: relative;
+  &__decor {
+    position: absolute;
+  }
+  &__title {
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  &__content-row-1 {
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 255px;
+  }
+  &__item-img {
+    margin-bottom: 15px;
+  }
+  &__item-title {
+    margin-bottom: 5px;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 8px;
+      background-color: $dark;
+      top: 50%;
+    }
+    &::before {
+      left: -18px;
+    }
+    &::after {
+      right: -18px;
+    }
+  }
+  &__item-text {
+    text-align: center;
+  }
+  &__item-modal-link {
+    color: #010101;
+    font-weight: 700;
+    border-bottom: 1px solid #a1a1a1;
+    transition: .4s;
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
+  }
+  &__item-2 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 146px;
+      top: -20px;
+      left: -37%;
+      border-left: 2px dashed hsla(0, 0%, 63%, 0.6);
+      border-bottom: 2px dashed hsla(0, 0%, 63%, 0.6);
+    }
+  }
+  &__item-3 {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 140px;
+      top: 50px;
+      left: -44%;
+      border-top: 2px dashed hsla(0, 0%, 63%, 0.6);
+      border-left: 2px dashed hsla(0, 0%, 63%, 0.6);
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      width: 195px;
+      height: 140px;
+      top: 50px;
+      right: -44%;
+      border-top: 2px dashed hsla(0, 0%, 63%, 0.6);
+      border-right: 2px dashed hsla(0, 0%, 63%, 0.6);
+    }
+
+  }
+  &__item-4 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 80px;
+      height: 146px;
+      top: -20px;
+      right: -38%;
+      border-right: 2px dashed hsla(0, 0%, 63%, 0.6);
+      border-bottom: 2px dashed hsla(0, 0%, 63%, 0.6);
+    }
+  }
+}
+.decor-1,
+.decor-2,
+.decor-3 {
+  width: 1px;
+  height: 100px;
+  background-color: $dark;
+}
+.decor-1 {
+  top: -50px;
+  left: 65px;
+}
+.decor-2 {
+  height: 50px;
+  top: -12px;
+  left: 55%;
+}
+.decor-3 {
+  top: 200px;
+  right: 60px;
+}
+
 
 // --- Contacts ---
   
