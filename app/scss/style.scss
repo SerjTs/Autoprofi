@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   &__logo {
-    width: 260px;
+    width: 250px;
   }
   &__info {
   }
@@ -122,6 +122,42 @@
 }
 
 // --- Services ---
+.services {
+  padding: 100px 0;  
+  &__title {
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 370px;
+    margin-bottom: 40px;
+    background-color: #333;
+  }
+  &__item-content {
+    padding: 12px 33px 29px;
+  }
+  &__item-img {
+  }
+  &__item-title {
+    margin-bottom: 10px;
+  }
+  &__item-title,
+  &__item-price {
+    text-align: left;
+    color: $light;
+  }
+  &__item-list {
+    margin-bottom: 22px;
+  }
+  &__item-list-li {
+    color: $light;
+    font-size: 18px;
+  }
+}
+
 
 // --- About ---
 
