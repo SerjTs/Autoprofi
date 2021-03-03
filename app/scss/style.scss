@@ -383,10 +383,142 @@
   right: 60px;
 }
 
-
 // --- Contacts ---
+.contacts {
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+  }
+  &__title {
+    &::after {
+      left: 30px;
+    }
+  }
+  &__item {
+    width: 33%;
+    padding-left: 30px;
+  }
+  &__item-text {
+    font-size: 21px;
+    color: #111;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  &__item-address {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -28px;
+      width: 11px;
+      height: 14px;
+      background-image: url('../images/contacts_address.png');
+    }
+  }
+  &__item-tel-1,
+  &__item-tel-2, {
+    display: block;
+  }
+  &__item-tel-1 {
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -28px;
+      width: 14px;
+      height: 14px;
+      background-image: url('../images/contacts_phone.png');
+    }
+  }
+  &__email-link {
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -28px;
+      width: 13px;
+      height: 11px;
+      background-image: url('../images/contacts_email.png');
+    }
+  }
+  &__item-time {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -28px;
+      width: 14px;
+      height: 14px;
+      background-image: url('../images/contacts_calendar.png');
+    }
+  }
+  &__socials {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -28px;
+      width: 15px;
+      height: 15px;
+      background-image: url('../images/contacts_link.png');
+    }
+  }
+  &__social-link {
+  }
+  &__map {
+    margin-top: 40px;
+    width: 750px;
+    height: 402px;
+    position: relative;
+    border: 1px solid #000;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 750px;
+      height: 400px;
+      top: -30px;
+      right: -30px;
+      border: 1px solid #000;
+    }
+  }
+}
   
 // --- Footer ---
+.footer {
+  padding: 30px 0;
+  background-color: #151515;
+  position: relative;
+  &__decor {
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background-color: $dark;
+    top: -50px;
+    left: 65px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;;
+  }
+  &__logo {
+    width: 250px;
+  }
+  &__btn {
+    font-size: 11px;
+    padding: 16px 25px;
+    letter-spacing: 1.3px;
+  }
+}
 
 
 
