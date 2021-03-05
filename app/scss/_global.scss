@@ -74,7 +74,14 @@ h3 {
   line-height: 28px;
   color: $dark;
   text-align: center;
-} 
+}
+
+h4 {
+  font-family: "FuturaLightC", sans-serif;
+  color: $light;
+  font-size: 21px;
+  text-align: center;
+}
 
 a {
   color: $light;
@@ -97,6 +104,10 @@ a {
     &:hover {
       background-color: #333;
     }
+}
+
+.logo-img {
+  width: 240px;
 }
 
 // @keyframes slideme {

@@ -13,7 +13,7 @@
   <!-- Header -->
   <header class="header">
     <a href="#" class="header__logo">
-      <img src="images/logo1.svg" alt="логотип">
+      <img class="logo-img" src="images/logo1.svg" alt="логотип">
     </a>
     <div class="header__info">
       <p class="header__time">
@@ -519,15 +519,33 @@
     </div>
   </section>
 
+    <div class="modal remodal" data-remodal-id="modal">
+      <div class="modal__wrapper">
+        <button data-remodal-action="close" class="modal__close remodal-close"></button>
+        <img class="logo-img" src="images/logo1.svg" alt="логотип">
+        <form action="#" class="modal__form">
+          <h4 class="modal__title">
+            Оставьте ваши контакты и наш консультант свяжется с вами
+          </h4>
+          <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
+          <input class="modal__input" type="tel" name="phone" placeholder="Введите номер телефона">
+          <input class="modal__submit" type="submit" value="ОТПРАВИТЬ">
+          <p class="modal__text">
+            Нажимая "Отправить" вы соглашаетесь на обработку ваших персональных данных.
+          </p>
+        </form>
+      </div>
+    </div>
+  
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__decor"></div>
     <div class="container">
       <div class="footer__content">
         <a href="#" class="footer__logo">
-          <img src="images/logo1.svg" alt="логотип">
+          <img class="logo-img" src="images/logo1.svg" alt="логотип">
         </a>
-        <a href="#" class="footer__btn popup-btn">заказать звонок</a>
+        <a data-remodal-target="modal" class="footer__btn popup-btn">заказать звонок</a>
       </div>
     </div>
   </footer>
