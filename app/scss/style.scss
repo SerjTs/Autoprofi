@@ -11,6 +11,11 @@
   padding: 35px 60px 0;
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
   &__time,
   &__email {
     color: $gray;
@@ -84,17 +89,23 @@
   &__title {
     max-width: 943px;
     margin-bottom: 25px;
+    opacity: 0;
+    animation: flipInX 1s .2s forwards;
   }
   &__subtitle {
     color: $light;
     font-size: 25px;
     margin-bottom: 75px;
+    opacity: 0;
+    animation: flipInX 1s .4s forwards;
   }
   &__btns-box {
     display: flex;
     justify-content: space-between;
     max-width: 600px;
     width: 100%;
+    opacity: 0;
+    animation: flipInX 1s .6s forwards;
   }
   &__btn-services {
     letter-spacing: 3.1px;
@@ -105,6 +116,8 @@
     justify-content: space-between;
     max-width: 1100px;
     width: 100%;
+    opacity: 0;
+    animation: fadeInUp 1s .8s forwards;
   }
   &__list-item {
     color: $light;
@@ -131,8 +144,6 @@
 .services {
   padding: 100px 0;
   background-color: #fafafa;  
-  &__title {
-  }
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -140,6 +151,8 @@
   }
   &__item {
     background-color: #333;
+    opacity: 0;
+    animation: flipInY 1s .5s forwards;
   }
   &__item img {
     width: 100%;
@@ -170,8 +183,6 @@
 .about {
   padding: 15px 0 90px;
   background-color: #fafafa;  
-  &__title {
-  }
   &__content {
     display: grid;
     gap: 30px;
@@ -182,6 +193,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    animation: flipInY 1s .2s forwards;
   }
   &__item-img {
     height: 66px;
@@ -217,6 +230,8 @@
     max-width: 640px;
     margin: 0 auto 65px;
     font-size: 23px;
+    opacity: 0;
+    animation: flipInY 1s .6s forwards;
   }
   &__content {
     display: flex;
@@ -229,6 +244,8 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 50px;
+    opacity: 0;
+    animation: flipInY 1s .6s forwards;
   }
   &__item-img {
     width: 75px;
@@ -257,6 +274,8 @@
   &__image {
     display: flex;
     justify-content: center;
+    opacity: 0;
+    animation: flipInY 1s .6s forwards;
     & img {
       max-height: 550px;
     }
@@ -279,25 +298,31 @@
       "how__item-1 how__item-1 how__item-3 how__item-3 how__item-5 how__item-5"
       ". how__item-2 how__item-2 how__item-4 how__item-4 ."; 
   }
-  &__item-1 {
-    grid-area: how__item-1;
-  }
-  &__item-2 {
-    grid-area: how__item-2;
-  }
-  &__item-3 {
-    grid-area: how__item-3;
-  }
-  &__item-4 {
-    grid-area: how__item-4;
-  }
-  &__item-5 {
-    grid-area: how__item-5;
-  }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+  }
+  &__item-1 {
+    grid-area: how__item-1;
+    animation: zoomIn 1s .2s forwards;
+  }
+  &__item-2 {
+    grid-area: how__item-2;
+    animation: zoomIn 1s .6s forwards;
+  }
+  &__item-3 {
+    grid-area: how__item-3;
+    animation: zoomIn 1s 1.0s forwards;
+  }
+  &__item-4 {
+    grid-area: how__item-4;
+    animation: zoomIn 1s 1.4s forwards;
+  }
+  &__item-5 {
+    grid-area: how__item-5;
+    animation: zoomIn 1s 2.0s forwards;
   }
   &__item-img {
     margin-bottom: 15px;
@@ -413,6 +438,7 @@
     justify-content: space-between;
   }
   &__title {
+    animation: zoomIn 1s .2s forwards;
     &::after {
       left: 30px;
     }
@@ -424,9 +450,12 @@
     font-size: 21px;
     color: #111;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: zoomIn 1s .6s forwards;
   }
   &__item-address {
     position: relative;
+    animation: zoomIn 1s .4s forwards;
     &::before {
       content: '';
       position: absolute;
@@ -457,6 +486,7 @@
   &__email-link {
     display: inline-block;
     position: relative;
+    animation: zoomIn 1s .8s forwards;
     &::before {
       content: '';
       position: absolute;
@@ -469,6 +499,7 @@
   }
   &__item-time {
     position: relative;
+    animation: zoomIn 1s .8s forwards;
     &::before {
       content: '';
       position: absolute;
@@ -481,6 +512,8 @@
   }
   &__socials {
     position: relative;
+    opacity: 0;
+    animation: zoomIn 1s 1.0s forwards;
     &::before {
       content: '';
       position: absolute;
@@ -499,6 +532,8 @@
     height: 402px;
     position: relative;
     border: 1px solid #000;
+    opacity: 0;
+    animation: zoomIn 1s .7s forwards;
     &::before {
       position: absolute;
       content: '';

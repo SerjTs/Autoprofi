@@ -40,6 +40,8 @@ h2 {
   margin-bottom: 65px;
   position: relative;
   z-index: 0;
+  opacity: 0;
+  animation: flipInX 1s .2s forwards;
   &::before {
     content: '';
     position: absolute;
@@ -92,7 +94,6 @@ a {
 .popup-btn {
   display: inline-block;
   padding: 18px 50px;
-  // background-color: transparent;
   background-color: rgba(#000000, .4);
   border: 3px solid #fff;
   text-transform: uppercase;
@@ -112,60 +113,82 @@ a {
   width: 240px;
 }
 
-// @keyframes slideme {
-//     0% { left: -30px; margin-left: 0px; }
-//     30% { left: 110%; margin-left: 80px; }
-//     100% { left: 110%; margin-left: 80px; } 
-// }
+// анимация
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
 
-// .anim {
-//   opacity: 0;
-// }
-// .fadeInUp {
-//   animation: fadeInUp 1s;
-//   animation-fill-mode: forwards;
-//   animation-delay: 0.3s;
-// }
-// @keyframes fadeInUp {
-//   0% {
-//       opacity: 0;
-//       transform: translate3d(0, 100%, 0);
-//   }
-//   100% {
-//       opacity: 1;
-//       transform: translate3d(0, 0, 0);
-//   }
-// }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-// @keyframes fadeInLeft {
-//   0% {
-//       opacity: 0;
-//       transform: translate3d(-100%, 0, 0);
-//   }
-//   100% {
-//       opacity: 1;
-//       transform: translate3d(0, 0, 0);
-//   }
-// }
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  100% {
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
 
-// @keyframes fadeInRight {
-//   0% {
-//       opacity: 0;
-//       transform: translate3d(100%, 0, 0);
-//   }
-//   100% {
-//       opacity: 1;
-//       transform: translate3d(0, 0, 0);
-//   }
-// }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-// @keyframes fadeInDown {
-//   0% {
-//       opacity: 0;
-//       transform: translate3d(0, 100%, 0);
-//   }
-//   100% {
-//       opacity: 1;
-//       transform: translate3d(0, 0, 0);
-//   }
-// }
+@keyframes flipInY {
+  0% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+  100% {
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    opacity: 1;
+  }
+}
