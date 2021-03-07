@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Автопрофи</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -529,8 +531,8 @@
           <h4 class="modal__title">
             Оставьте ваши контакты и&nbsp;наш консультант свяжется с&nbsp;вами
           </h4>
-          <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
-          <input class="modal__input" type="tel" name="phone" placeholder="Введите номер телефона">
+          <input class="modal__input" type="text" name="name" placeholder="Ваше имя" required>
+          <input class="modal__input" type="tel" name="phone" placeholder="Введите номер телефона" required>
           <input class="modal__submit" type="submit" value="ОТПРАВИТЬ">
           <p class="modal__text">
             Нажимая &laquo;Отправить&raquo; вы&nbsp;соглашаетесь на&nbsp;обработку ваших персональных данных.
@@ -538,6 +540,14 @@
         </form>
       </div>
     </div>
+
+    <div type="button" class="callback-bt" data-remodal-target="modal">
+      <div class="text-call">
+        <i class="fa fa-phone"></i>
+        <span>Заказать<br>звонок</span>
+      </div>
+    </div>
+
   </main>
   <!-- Footer -->
   <footer class="footer">
