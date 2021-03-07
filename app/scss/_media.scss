@@ -1,0 +1,279 @@
+@media (max-width: 1100px) {
+  .top {
+    &__list {
+      max-width: 900px;
+    }
+    &__list-item {
+      font-size: 15px;
+    }
+  }
+  .decor-1,
+  .decor-2,
+  .decor-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__info {
+    display: none;
+  }
+  .top {
+    &__title {
+      font-size: 40px;
+      text-align: center;
+    }
+    &__subtitle {
+      font-size: 21px;
+      text-align: center;
+    }
+    &__list {
+      margin-top: 80px;
+      max-width: none;
+      width: auto;
+      display: inline-block;
+      flex-direction: column;
+    }
+    &__list-item {
+      margin-bottom: 10px;
+      & + & {
+        margin-left: 0;
+      }
+    }
+  }
+  .services {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .checking {
+    &__content {
+      flex-direction: column;
+    }
+    &__items {
+      width: unset;
+      margin: 0 auto;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+  } 
+  .how {
+    &__item-2 {
+      &::before {
+       display: none;
+      }  
+    }
+    &__item-3 {
+      &::after {
+        display: none;
+      }  
+      &::before {
+        display: none;
+      }  
+    }
+    &__item-4 {
+      &::before {
+        display: none;
+      }  
+    }
+    &__content {
+      grid-template-columns: repeat(2, 1fr);  
+      grid-template-areas: 
+        "how__item-1 how__item-2"
+        "how__item-3 how__item-4"
+        "how__item-5 how__item-5";
+    }  
+  }
+  .contacts {
+    &__map {
+      margin-right: 30px;
+      width: 52%;
+    }
+  }
+  .footer {
+    &__decor {
+      display: none;
+    }
+  }  
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 200px;
+  }
+  .header{
+    padding: 15px 15px 0;
+    &__phone-link {
+      font-size: 17px;
+      line-height: 1.4;
+    }
+    &__modal-link {
+      font-size: 11px;
+    }
+  }
+  .services {
+    padding: 60px 0;
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    text-align: center;
+    position: unset;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .about {
+    padding: 15px 0 50px;
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+  }
+  .checking {
+    padding: 60px 0 50px;
+    &__subtitle {
+      margin-bottom: 50px;
+      line-height: 1.2;
+    }
+  }
+  .how {
+    padding: 60px 0 50px;
+    &__content {
+      grid-template-columns: 100%;
+      row-gap: 40px;  
+      grid-template-areas: 
+        "how__item-1"
+        "how__item-2"
+        "how__item-3"
+        "how__item-4"
+        "how__item-5";
+    }
+    &__item-text {
+      max-width: unset;
+    }  
+  }
+  .contacts {
+    padding: 50px 0;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      margin-bottom: 30px;
+    }
+    &__map {
+      margin-right: 30px;
+      width: 90%;
+    }
+  }  
+}
+
+@media (max-width: 574px) {
+  .top {
+    &__btns-box {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__btn-consult {
+      margin-bottom: 35px;
+    }
+  }
+  .footer {
+    padding: 50px 0;
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      margin-bottom: 50px;
+    }
+  }  
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 180px;
+  }
+  .header{
+    &__phone-link {
+      padding-left: 0px;
+      text-align: right;
+      &::before {
+        display: none;
+      }
+    }
+    &__modal-link {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .top {
+    &__title {
+      font-size: 34px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    &__subtitle {
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    &__btn-consult {
+      margin-bottom: 10px;
+    }
+    &__list {
+      margin-top: 20px;
+    }
+  }
+  .services {
+    &__item-content {
+      padding: 15px;
+    }
+    &__item-list {
+      margin-bottom: 10px;
+    }
+  }
+  .about {
+    &__item-img {
+      margin-bottom: 10px;
+    }
+    &__item-title {
+      margin-bottom: 30px;
+      line-height: 1.2;
+      &::after {
+      bottom: -27px;
+      }
+    }
+    &__item-text {
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+      margin-bottom: 15px;
+    }
+    &__modal-link {
+      &::before {
+        display: block;
+      }
+    }
+  }
+  .top__title {
+    font-size: 30px;
+  }
+  .modal__title {
+    font-size: 19px;
+  }
+}

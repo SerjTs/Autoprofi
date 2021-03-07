@@ -36,6 +36,7 @@ h2 {
   font-weight: 700;
   color: $dark;
   text-transform: uppercase;
+  margin-left: 50px;
   margin-bottom: 65px;
   position: relative;
   z-index: 0;
@@ -91,7 +92,8 @@ a {
 .popup-btn {
   display: inline-block;
   padding: 18px 50px;
-  background-color: transparent;
+  // background-color: transparent;
+  background-color: rgba(#000000, .4);
   border: 3px solid #fff;
   text-transform: uppercase;
   text-align: center;
